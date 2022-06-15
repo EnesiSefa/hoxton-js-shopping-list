@@ -7,7 +7,7 @@
 
 
 
-const menuList = ["Milk","Cocoa","Salad","Carrots", "Tomatoes","Ready meals" ]
+const menuList = [["Milk",1.20],["Cocoa",2.00],["Salad",2.00],["Carrots",2.00], ["Tomatoes",2.50],["Ready meals",5.00] ]
 
 // let grocery = prompt("What do you like to buy?")
 
@@ -23,5 +23,5 @@ for (let i = 0, sum = 0; i <= prices.length; sum += prices[i++]){
 }
 
 for(let item of menuList){
-    console.log(item + prices)
+    console.log(item)
 }
