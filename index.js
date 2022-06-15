@@ -8,6 +8,8 @@
 
 
 let menu = [["Milk",1.20], ["Cocoa",2.00], ["Salad",2.00],["Carrots",2.00],["Tomatoes",2.50],["Ready meals",5.00] ]
-console.log(menu[0])
 
+for(let items of menu){
+    console.log(items)
+}
 
