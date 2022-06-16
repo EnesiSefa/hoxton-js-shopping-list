@@ -7,21 +7,32 @@
 
 
 
-const menuList = [["Milk",1.20],["Cocoa",2.00],["Salad",2.00],["Carrots",2.00], ["Tomatoes",2.50],["Ready meals",5.00] ]
+const menuList = [
+     "Milk",
+     "Cocoa", 
+     "Salald", 
+     "Carrots",
+     "Tomatoes", 
+     "Ready meals"
+]
+let price = [1.20, 2.00, 2.00, 2.00, 2.50, 5.00]
 
-// let grocery = prompt("What do you like to buy?")
+let newItem = prompt("enter your item")
+menuList.push(newItem)
+console.log(menuList)
+
+let newPrice = Number(prompt("enter your price"))
+price.push(newPrice)
+console.log(price)
 
 
 
 
 
-const prices =[1.20, 2.00, 2.00, 2.00, 2.50, 5.00]
 
+let sum = 0
+ for (let i = 0; i < price.length; [i++]){
+        sum += price[i]
+     console.log( "the total you need to pay " + sum)
+ }
 
-for (let i = 0, sum = 0; i <= prices.length; sum += prices[i++]){
-    console.log( "the total you need to pay " + sum)
-}
-
-for(let item of menuList){
-    console.log(item)
-}
